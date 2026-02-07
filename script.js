@@ -6,8 +6,7 @@ let level = 0
 let gamePattern = []
 let userClickedPattern = []
 
-let started = falsele
-let
+let started = false
 
 const title = document.getElementById("level-title")
 const startButton = document.getElementById("start-btn")
@@ -58,9 +57,9 @@ function checkAnswer(currentLevel) {
             }, 1000)
         }
     } else {
-        title.textContent = "Game Over! Score: " + (level - 1) 
+        title.textContent = "Game Over! Score: " + (level - 1)
         setTimeout(() => {
-            document.body.classList.add("game-over! Score: " + (level - 1)
+            document.body.classList.add("game-over")
         }, 200)
 
         startOver()
